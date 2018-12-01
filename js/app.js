@@ -1,11 +1,6 @@
-// const names = ["Maddie", "Boots", "Athena", "Simon", "Tabby"];
-// const catsName = document.querySelectorAll('li');
 const container = document.querySelector('.container')
-// const display = document.querySelector('.display')
 const image = document.querySelector('img')
-// const name = document.querySelector('.name')
 const clicks = document.querySelector('.clicks')
-// const pictures = ["cat.jpg", "cat2.jpg", "cat3.jpg", "cat4.jpg", "cat5.jpg"]
 const kitties = [
   {name: "Maddie",
    image: "./img/cat.jpg",
@@ -27,10 +22,11 @@ const kitties = [
    image: "./img/cat5.jpg",
    clicked: 0
  }
-
 ]
+//loop through kitties array
 for(let i=0; i<kitties.length; i++) {
   let name = kitties[i].name
+  //make a div that contains all the names
   const elem = document.createElement('div')
   elem.innerHTML = name
 
