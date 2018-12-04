@@ -9,15 +9,28 @@
 </head>
 <body>
   <div class = "container">
-
-
-  </div>
+  <ul class="cat-list"></ul>
   <div class="display">
-  <img />
-  <p class="name"></p>
-  <p class="clicks"> 0</p>
-    </div>
+      <h2 class="name"></h2>
+      <div class="count"></div>
+      <img class="cat-pic" src="" alt="cat pic" />
+  </div>
 
+  <button id='admin'>ADMIN</button>
+  <form>
+  <div class="cat-info">
+    <label for="cat-name">Name </label>
+      <input type="text" id="cat-name" value="">
+    <label for="cat-url"> Url </label>
+      <input type="text" id="cat-url" value="">
+    <label for="cat-clicks"> #Clicks </label>
+      <input type="text" id="cat-clicks" value="">
+      <div class="form-buttons">
+        <input type="button" id="save" value="Save"> <input type="button" id="cancel" value="Cancel">
+      </div>
+  </div>
+  </form>
+</div>
 
 <script src="./js/app.js"></script>
 </body>
